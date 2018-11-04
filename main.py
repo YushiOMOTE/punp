@@ -1,12 +1,12 @@
 from dataclasses import dataclass
-from pypp import pypp
+from punp import punp
 from typing import List, Tuple, Dict, Optional
 
 import json
 import yaml
 
 
-@pypp
+@punp
 @dataclass
 class SubTest:
     p: int
@@ -14,7 +14,7 @@ class SubTest:
     r: float
 
 
-@pypp
+@punp
 @dataclass
 class Test:
     i: int

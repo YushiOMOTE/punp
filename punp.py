@@ -18,7 +18,7 @@ def _is_opt(ty):
     return _params(ty)[1] is type(None)
 
 
-def pypp(cls):
+def punp(cls):
     def unpack(ty, val):
         if ty is Wrapper:
             return ty(val)
